@@ -1,0 +1,67 @@
+/* AdminLayout.css */
+
+/* General styles for the layout */
+.admin-1 {
+    display: flex;
+    height: 100vh;
+    background-color: #000; /* Black background for the header and sidebar */
+  }
+  
+  /* Sidebar container */
+  .admin-container {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #000; /* Black background for the sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  /* Navigation styles */
+  .admin-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .admin-nav ul li {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .admin-nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  .admin-nav ul li a:hover {
+    background-color: #333; /* Darker background on hover */
+  }
+  
+  .admin-nav ul li a svg {
+    margin-right: 10px;
+  }
+  
+  /* Main content area */
+  .admin-main {
+    flex-grow: 1; /* Take up the remaining space */
+    background-color: #111; /* Dark background for the main content */
+    color: #fff; /* White text color */
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Loading state
+  .admin-div {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 24px;
+    color: #fff;
+  } */
+  

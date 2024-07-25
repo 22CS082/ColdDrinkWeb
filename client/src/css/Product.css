@@ -1,0 +1,110 @@
+/* Update Product.css */
+
+/* Base styles */
+.Product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White color for text */
+    font-family: cursive;/* Basic font family */
+  }
+  .product-h1 h1 {
+    color: rgba(165, 42, 42, 0.638);
+    position: relative; /* Needed for the absolute positioning of the ::after pseudo-element */
+    font-size: 2.5rem; /* Adjusted size for better visibility */
+    padding-bottom: 10px; /* Space for the underline */
+    display: inline-block; /* Ensures the line is only as wide as the text */
+}
+@keyframes drawLine {
+    0% {
+        transform: scaleX(0); /* Start with no line */
+        width: 0; /* Start with zero width */
+    }
+    50% {
+        transform: scaleX(1); /* Draw line to full width */
+        width: 60%; /* Full width of the text */
+    }
+    100% {
+        transform: scaleX(0); /* Draw line back to zero width */
+        width: 0; /* End with zero width */
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scaleX(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scaleX(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+.product-h1 h1::after {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Initial width of the line */
+    height: 2px; /* Thickness of the line */
+    background: rgba(165, 42, 42, 0.638); /* Line color */
+    transform: scaleX(0); /* Start from zero width */
+    transform-origin: bottom left; /* Animation starts from the left side */
+    animation: drawLine 3.5s ease-in-out infinite; /* Animate the line drawing effect back and forth */
+}
+/*   
+  /* .Product-container h1 {
+ 
+  
+  /* Product Images */
+  .images-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three fixed columns */
+    gap: 30px; /* Adjust margin between images */
+    justify-items: center;
+  }
+  
+  .bottel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    
+     /* Light background color for bottles */
+    cursor: default; /* Remove pointer cursor */
+    transition: transform 0.3s; /* Transition for transform on hover */
+  }
+  
+  .bottel img {
+    width: 50%; /* Images fill container width */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  /* Hover effects on images with slight delay */
+  .bottel:hover img {
+    transform: perspective(1000px) rotateY(5deg) scale(1.02); /* Tilt and zoom on hover with delay */
+    transition-delay: 0.2s; /* Delay the hover effect */
+  }
+  
+  /* Optional: Product Name and Description */
+  .bottel h1 {
+    margin-top: 10px;
+    font-size: 2.2rem;
+    color: aliceblue; /* Darker text color */
+  }
+  
+  .bottel p {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #777; /* Light gray text color */
+  }
+  

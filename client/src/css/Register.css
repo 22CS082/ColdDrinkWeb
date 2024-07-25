@@ -1,0 +1,112 @@
+@keyframes photoEffect {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+@keyframes underlineAnimationLTR {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.Register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 8%;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+}
+
+.Register-text {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Register-header {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.Register-header h1 {
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.Register-header h1::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: white;
+    animation: underlineAnimationLTR 3s linear infinite;
+}
+
+.Register-textlabel {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.Register-textlabel label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.Register-textlabel input {
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #030303;
+    color: white;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #2b2f3495;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2b2f3444;
+}
+
+.Register-image {
+    flex: 1;
+    margin-left: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    animation: photoEffect 5s infinite;
+}
+
+.Register-image img {
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+}

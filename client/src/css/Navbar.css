@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: cursive;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: white;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: auto;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar__links a,
+.navbar__links .logout-button {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 0.0rem 0.0rem;
+  border-radius: 4px;
+  transition: color 0.3s;
+  font-size: 1.5rem;
+}
+
+.navbar__links a::after,
+.navbar__links .logout-button::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  bottom: -2px;
+  background: rgba(165, 42, 42, 0.352);
+  transition: width 0.3s ease;
+}
+
+.navbar__links a:hover,
+.navbar__links .logout-button:hover {
+  color: brown;
+}
+
+.navbar__links a:hover::after,
+.navbar__links .logout-button:hover::after {
+  width: 100%;
+}
+
+.logout-button,
+.login-button,
+.register-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}

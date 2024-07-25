@@ -1,0 +1,200 @@
+/* General styles for the footer component */
+.footer-component {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0px 10%;
+    justify-content: space-around;
+    color: aliceblue;
+    font-family: cursive;
+    
+    padding: 20px 0; /* Vertical padding for space */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Right section */
+.footer-right {
+    width: 55%; /* Adjusted width for better balance */
+}
+
+.footer-right p {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    line-height: 1.6; /* Improve readability */
+}
+
+.footer-right h1 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    margin-bottom: 10px; /* Space below each section */
+}
+
+.footer-right h1 i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.footer-right h1 p {
+    font-size: 0.9rem; /* Smaller font size for additional details */
+}
+
+/* Left section */
+.footer-left {
+    width: 45%;
+}
+
+.footer-left h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Space below each heading */
+}
+
+.footer-left p {
+    font-size: 1rem;
+    line-height: 1.6; /* Improve readability */
+}
+
+.footer-left-social {
+    display: flex;
+    margin-top: 10px; /* Add space above the social media icons */
+}
+
+.footer-left-social a {
+    color: #fff; /* White icons */
+    font-size: 2rem; /* Icon size */
+    margin-right: 15px; /* Space between icons */
+    transition: color 0.3s;
+    text-decoration: none; /* Smooth color transition */
+}
+
+.footer-left-social a:hover {
+    color: #2f1f04; /* Change color on hover */
+}
+
+/* Horizontal line */
+hr {
+    border: 0;
+    height: 1px;
+    background: #333; /* Slightly lighter dark line color */
+    margin: 0; /* Remove margin */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1250px) {
+    .footer-right p {
+        font-size: 1.2rem;
+    }
+
+    .footer-right h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer-right h1 p {
+        font-size: 0.8rem;
+    }
+
+    .footer-left h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer-left-social a {
+        font-size: 1.5rem;
+    }
+
+    .footer-left p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-component {
+        width: 90%;
+        margin: 0px 5%;
+        background-color: #444; /* Ensure background color */
+    }
+
+    .footer-right p {
+        font-size: 1rem;
+    }
+
+    .footer-right h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer-right h1 p {
+        font-size: 0.7rem;
+    }
+
+    .footer-left h1 {
+        font-size: 1.1rem;
+    }
+
+    .footer-left-social a {
+        font-size: 1.3rem;
+    }
+
+    .footer-left p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer-right p {
+        font-size: 0.9rem;
+    }
+
+    .footer-right h1 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .footer-right h1 p {
+        font-size: 0.75rem;
+    }
+
+    .footer-left h1 {
+        font-size: 1rem;
+    }
+
+    .footer-left-social a {
+        font-size: 1.2rem;
+    }
+
+    .footer-left p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-component {
+        width: 95%;
+        margin: 0px 2.5%;
+         /* Ensure background color */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-right p {
+        font-size: 0.8rem;
+    }
+
+    .footer-right h1 {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .footer-right h1 p {
+        font-size: 0.7rem;
+    }
+
+    .footer-left h1 {
+        font-size: 0.9rem;
+    }
+
+    .footer-left-social a {
+        font-size: 1rem;
+    }
+
+    .footer-left p {
+        font-size: 0.8rem;
+    }
+}
