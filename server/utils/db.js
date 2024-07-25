@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 
-MONGODB_URI="mongodb+srv://suvariyayashvi77:TRnQ6oKzY6IDmRxG@cluster0.80cxpxt.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0";
+// MONGODB_URI="add your mongodb atlas url"
+
 const connectDb = async () => {
   try {
     await mongoose.connect(MONGODB_URI, {
