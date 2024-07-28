@@ -57,7 +57,7 @@ userSchema.methods.generateToken = async function() {
       userId: this._id.toString(),
       email: this.email,
       isadmin: this.isadmin,
-    }, JWT_SECRET_KEY, {
+    }, process.env.JWT_SECRET_KEY, {
       expiresIn: '1y',
     });
   } catch (error) {
