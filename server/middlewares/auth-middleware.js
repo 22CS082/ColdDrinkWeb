@@ -9,7 +9,7 @@ const authMiddleware = async (req, res, next) => {
   }
 
   const jwtToken = token.replace('Bearer ', '').trim();
-  const JWT_SECRET_KEY = "YASHVISUVARIYASHREYAVEKARIYA";
+  const JWT_SECRET_KEY = "";//add secret key
 
   try {
     console.log('JWT Token:', jwtToken);  // Debugging: Log the received token
